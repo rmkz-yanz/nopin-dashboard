@@ -1,0 +1,151 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+marquee, a, font {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+marquee {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; /* Pastikan konten berada di atas video */
+}
+
+#bgv {
+  position: absolute;
+  background: rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.docs {
+  color: white;
+}
+
+#set-btn {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+}
+
+#open, .close {
+  color: white;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+#open {
+  position: absolute;
+  right: 0;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+#menu {
+  position: absolute;
+  right: 0;
+  display: none;
+  border: 1px solid white;
+  color: white;
+  margin-top: 3px;
+  margin-right: 3px;
+  padding-left: 10px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+}
+
+.ilang{
+  color: transparent;
+}
+
+label {
+  position: relative;
+  bottom: 8px;
+}
+
+
+
+     .search-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            background: none;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-row {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .search-box {
+          color: #fff;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search-box:focus {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-cari {
+            padding: 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            color: rgb(125, 125, 125);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            min-width: 80px;
+            white-space: nowrap;
+        }
+
+        .button-cari:hover {
+            background: linear-gradient(135deg, #8EC5FC, #C0C3FC);
+        }
