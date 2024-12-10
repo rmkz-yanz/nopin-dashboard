@@ -4,7 +4,7 @@ async function mulai() {
   // Menampilkan pesan waktu sesuai dengan jam
   await Swal.fire({
     title: getGreeting(), // Menggunakan greeting berdasarkan waktu
-    text: getTimeBasedText(), // Mengganti teks sesuai waktu
+   // text: getTimeBasedText(), // Mengganti teks sesuai waktu
     confirmButtonText: 'OK'
   });
   
